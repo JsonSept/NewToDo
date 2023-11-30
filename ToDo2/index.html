@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+</head>
+<body>
+    <!-- <button id="btn">Sort</button> -->
+    <input type="text" id="input" placeholder="input task here">
+    <button id="btn">Add</button>
+
+    <p id="para">Javascript</p>
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        let input = document.getElementById('input');
+        let output = document.getElementById('para');
+        let del = document.createElement("button");
+        del
+        document.body.appendChild(del).innerText = "Delete";
+
+        function myFunction(value) {
+            output.innerText += `
+            ${value}`
+        }
+
+        btn.addEventListener('click', () =>{
+            myFunction(input.value)
+         });
+    </script>
+
+<!-- <script>
+    let btn = document.getElementById("btn");
+    let input = document.getElementById("input");
+    let output = document.getElementById("para");
+   
+    function myFunction(value) {
+        output.innerText+= `
+        ${value}`
+       
+    }
+    
+    btn.addEventListener('click', () =>{
+        myFunction(input.value)
+    });
+</script> -->
+
+
+</body>
+</html>
